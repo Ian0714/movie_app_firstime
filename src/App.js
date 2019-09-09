@@ -5,8 +5,16 @@ class App extends React.Component{
   state = {
     count: 0
   };
+  add = () => {};
+  minus = () => {};
   render(){
-    return <h1>I'm a class {this.state.count}</h1>;
+    return (
+    <div>
+      <h1>I'm a class {this.state.count}</h1>
+      <button onClick={this.add}>Add</button>
+      <button onClick={this.minus}>Minus</button>
+    </div>
+    );
   }
 }
 
